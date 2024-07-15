@@ -1,0 +1,183 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liked Songs</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'profile.css' %}" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- streamX Logo -->
+      <div class="logo-container">
+          <img src="{% static 'assets/logonamed.png' %}" alt="streamX Logo">
+      </div>
+
+      <!-- sidebar section -->
+      <div class="sidebar-section">
+          <a href="/" class="sidebar-link">
+            <span class="sidebar-link-icon">🏠</span>
+            Home
+          </a>
+          <a href="/search" class="sidebar-link">
+            <span class="sidebar-link-icon">🔍</span>
+            Search
+          </a>
+          <a href="/library/" class="sidebar-link">
+            <span class="sidebar-link-icon">🎵</span>
+            Your Library
+          </a>
+          <a href="/likedsongs/" class="sidebar-link">
+            <span class="sidebar-link-icon">💜</span>
+            Liked Songs
+          </a>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1">
+      <!-- Artist Header -->
+      <div class="relative">
+        <img src="{% static 'assets/likedsongcover.jpg' %}" alt="cover">
+      </div>
+
+      <!-- Popular Tracks Section -->
+      <div class="p-5">
+        <h2 class="text-2xl font-bold mb-4">Liked Songs</h2>
+        <div class="divide-y divide-gray-800">
+
+          <!-- Single Row -->
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/nm.jpg' %}" alt="Nahin Milta" class="w-12 h-12">
+              <div>
+                <a href="/music/0cUdmruT6kjxa5KpteSdwc/" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Nahin Milta</p>
+                  <p class="text-xs text-gray-400">Bayaan</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">2019</div>
+            <div class="justify-self-end text-gray-400">4:45</div>
+          </div>
+
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/nm.jpg' %}" alt="Farda" class="w-12 h-12">
+              <div>
+                <a href="/music/6z9YgNd6u3k7eSLAR7Nsom/" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Farda</p>
+                  <p class="text-xs text-gray-400">Bayaan</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">2019</div>
+            <div class="justify-self-end text-gray-400">4:29</div>
+          </div>
+
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/namgoom.jpg' %}" alt="Naam Goom Jayega" class="w-12 h-12">
+              <div>
+                <a href="/music/21dj07lJkQC7X5ZvKE4fx4/" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Naam Goom Jayega</p>
+                  <p class="text-xs text-gray-400">Lata Mangeshkar and Bhupinder Singh</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">1977</div>
+            <div class="justify-self-end text-gray-400">5:40</div>
+          </div>
+
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/rdb.jpg' %}" alt="Luka Chuppi" class="w-12 h-12">
+              <div>
+                <a href="/music/3J5XaAaG7lcPawT8bpnaIW/" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Luka Chuppi</p>
+                  <p class="text-xs text-gray-400">Lata Mangeshkar and A.R. Rahman</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">2006</div>
+            <div class="justify-self-end text-gray-400">4:12</div>
+          </div>
+
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/ackt.jpg' %}" alt="Aa chal ke tujhe" class="w-12 h-12">
+              <div>
+                <a href="/music/5SNISinXkLXldkP8eBGWfO/" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Aa chal ke tujhe</p>
+                  <p class="text-xs text-gray-400">Kishore Kumar</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">1964</div>
+            <div class="justify-self-end text-gray-400">5:09</div>
+          </div>
+          
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/jkh.jpg' %}" alt="Jaat Kahan Ho" class="w-12 h-12">
+              <div>
+                <a href="/music/2UJ8Fg20zeJiC8WQEEE9uQ/" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Jaat Kahan Ho</p>
+                  <p class="text-xs text-gray-400">Kesarbai Kerkar</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">1944</div>
+            <div class="justify-self-end text-gray-400">3:39</div>
+          </div>
+
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/oso.jpg' %}" alt="Main Agar Kahoon" class="w-12 h-12">
+              <div>
+                <a href="/music/0iXLwnLmLwn9y54JtBTNxY/" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Main Agar Kahoon</p>
+                  <p class="text-xs text-gray-400">Sonu Nigam and Shreya Ghoshal</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">2007</div>
+            <div class="justify-self-end text-gray-400">5:29</div>
+          </div>
+
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/kank.jpg' %}" alt="Tum Hi Dekho Na" class="w-12 h-12">
+              <div>
+                <a href="/music/2ILhVeTkbDAYEvesCCBsNo/" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Tumhi Dekho Na</p>
+                  <p class="text-xs text-gray-400">Sonu Nigam and Alka Yagnik</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">2006</div>
+            <div class="justify-self-end text-gray-400">4:56</div>
+          </div>
+
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/zakhm.jpg' %}" alt="Gali Mein Aaj Nikla" class="w-12 h-12">
+              <div>
+                <a href="/music/0fryaPZ0trTqvvKn7AZel9/" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Gali Mein Aaj Nikla</p>
+                  <p class="text-xs text-gray-400">Alka Yagnik</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">1998</div>
+            <div class="justify-self-end text-gray-400">3:30</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

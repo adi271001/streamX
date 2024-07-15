@@ -1,0 +1,254 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>streamX</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}" />
+</head>
+<body style="margin:0; padding:0; background:#121212; font-family:Arial, sans-serif; color:#fff;">
+    
+
+    <div style="margin-left:240px; padding:20px;">
+        <header class="header-container">
+            <form action="search/" method="POST">
+                {% csrf_token %}
+                <div class="search-bar" style="width: 390px;">
+                    <input type="search" name="search_query" placeholder="Search for..." aria-label="Search">
+                    <button type="submit" aria-label="Search">
+                        🔍
+                    </button>
+                </div>
+            </form>
+            <div class="search-title">Top Artists</div>
+        </header>
+
+
+        <main style="padding-top:20px;">
+            <section style="margin-top:0px; padding-left: 10px; white-space:nowrap;">
+                <!-- Artist Card -->
+                <div class="artist-card">
+                    <a href="/profile/61JrslREXq98hurYL2hYoc/" style="text-decoration: none;">
+                        <img src="{% static 'assets/latam.jpg' %}"  alt="Lata Mangeshkar" style="width:150px; height:150px; border-radius:50%;">
+                        <div class="artist-info">
+                            <div class="artist-name">Lata Mangeshkar</div>
+                            <div class="artist-title">Artist</div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="artist-card">
+                    <a href="/profile/0GF4shudTAFv8ak9eWdd4Y/" style="text-decoration: none;">
+                        <img src="{% static 'assets/kishorekumar.jpg' %}" alt="Kishore Kumar" style="width:150px; height:150px; border-radius:50%;">
+                        <div class="artist-info">
+                            <div class="artist-name">Kishore Kumar</div>
+                            <div class="artist-title">Artist</div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="artist-card">
+                    <a href="/profile/2ae6PxICSOZHvjqiCcgon8/" style="text-decoration: none;">
+                        <img src="{% static 'assets/spbalasm.jpg' %}" alt="S.P. Balasubrahmanyam" style="width:150px; height:150px; border-radius:50%;">
+                        <div class="artist-info">
+                            <div class="artist-name">S.P. Balasubramanyam</div>
+                            <div class="artist-title">Artist</div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="artist-card">
+                    <a href="/profile/1dVygo6tRFXC8CSWURQJq2/" style="text-decoration: none;">
+                        <img src="{% static 'assets/sonunigam.jpg' %}" alt="Sonu Nigam" style="width:150px; height:150px; border-radius:50%;">
+                        <div class="artist-info">
+                            <div class="artist-name">Sonu Nigam</div>
+                            <div class="artist-title">Artist</div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="artist-card">
+                    <a href="/profile/0oOet2f43PA68X5RxKobEy/" style="text-decoration: none;">
+                        <img src="{% static 'assets/shreyaghoshal.jpg' %}" alt="Shreya Ghoshal" style="width:150px; height:150px; border-radius:50%;">
+                        <div class="artist-info">
+                            <div class="artist-name">Shreya Ghoshal</div>
+                            <div class="artist-title">Artist</div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="artist-card">
+                    <a href="/profile/6KImCVD70vtIoJWnq6nGn3/" style="text-decoration: none;">
+                        <img src="{% static 'assets/harrystyles.jpg' %}" alt="Harry Styles" style="width:150px; height:150px; border-radius:50%;">
+                        <div class="artist-info">
+                            <div class="artist-name">Harry Styles</div>
+                            <div class="artist-title">Artist</div>
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="artist-card">
+                    <a href="/profile/6eUKZXaKkcviH0Ku9w2n3V/" style="text-decoration: none;">
+                        <img src="{% static 'assets/edsheeran.jpg' %}" alt="Ed Sheeran" style="width:150px; height:150px; border-radius:50%;">
+                        <div class="artist-info">
+                            <div class="artist-name">Ed Sheeran</div>
+                            <div class="artist-title">Artist</div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+          
+            <!-- "Browse All" Section Title -->
+            <div class="browse-all-title">Browse all</div>
+
+            <!-- "Browse All" Section Content -->
+            <div class="browse-all">
+            <!-- Category Card -->
+                <div class="category-card">
+                    <img src="{% static 'assets/podcast.jpg' %}" alt="Podcasts">
+                    <div class="category-title">Podcasts</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/audiobook.jpeg' %}" alt="Audiobooks">
+                    <div class="category-title">Audiobooks</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/liveevents.jpg' %}" alt="Live Events">
+                    <div class="category-title">Live Events</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/madefru.jpeg' %}" alt="Made For You">
+                    <div class="category-title">Made For You</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/newrelease.jpeg' %}" alt="New Releases">
+                    <div class="category-title">New Releases</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/2024music.jpeg' %}" alt="2024 in Music">
+                    <div class="category-title">2024 in Music</div>
+                </div>
+            </div>
+
+            <div class="browse-all">
+                <!-- Category Card -->
+                <div class="category-card">
+                    <img src="{% static 'assets/2024podcast.jpeg' %}" alt="2024 in podcasts">
+                    <div class="category-title">2024 in podcasts</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/merch.jpeg' %}" alt="Merch">
+                    <div class="category-title">Merch</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/christmashits.jpeg' %}" alt="Merry Christmas">
+                    <div class="category-title">Merry Christmas</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/pop.jpeg' %}" alt="Pop">
+                    <div class="category-title">Pop</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/mood.jpeg' %}" alt="Mood">
+                    <div class="category-title">Mood</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/hiphop.jpeg' %}" alt="Hip-Hop">
+                    <div class="category-title">Hip-Hop</div>
+                </div>
+            </div>
+
+            <div class="browse-all">
+                <!-- Category Card -->
+                <div class="category-card">
+                    <img src="{% static 'assets/podcastchart.png' %}" alt="Podcast Charts">
+                    <div class="category-title">Podcast Charts</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/podcastrelease.jpeg' %}" alt="Podcast New Releases">
+                    <div class="category-title">Podcast New Releases</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/videopodcast.jpeg' %}" alt="Video Podcasts">
+                    <div class="category-title">Video Podcasts</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/fandl.jpeg' %}" alt="Fiction & Literature">
+                    <div class="category-title">Fiction & Literature</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/charts.jpg' %}" alt="Charts">
+                    <div class="category-title">Charts</div>
+                </div>
+
+                <div class="category-card">
+                    <img src="{% static 'assets/workout.jpeg' %}" alt="Workout">
+                    <div class="category-title">Workout</div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="sidebar">
+        <!-- streamX Logo -->
+        <div class="logo-container">
+            <img src="{% static 'assets/logonamed.png' %}" alt="streamX Logo" style="width: 100%; height: auto; padding: 20px; box-sizing: border-box;">
+        </div>
+
+        <!-- Welcome User -->
+        <div class="sidebar-section">
+            <span style="margin-left: 14px;" class="sidebar-link-icon">👤</span>
+            <b>Welcome, {{user.username}}</b>
+            <br />
+            <br />
+
+            <a href="/logout">
+                <span class="sidebar-link-icon">↪️</span>
+                <b>Logout</b>
+            </a>
+        </div>
+
+        <!-- sidebar section -->
+        <div class="sidebar-section">
+            <a href="/" class="sidebar-link active">
+                <span class="sidebar-link-icon">🏠</span>
+                Home
+            </a>
+            <a href="/search/" class="sidebar-link">
+                <span class="sidebar-link-icon">🔍</span>
+                Search
+            </a>
+            <a href="/library/" class="sidebar-link">
+                <span class="sidebar-link-icon">🎵</span>
+                Your Library
+            </a>
+            <a href="/likedsongs/" class="sidebar-link">
+                <span class="sidebar-link-icon">💜</span>
+                <span class="sidebar-link-text">Liked Songs</span>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

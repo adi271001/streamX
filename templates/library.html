@@ -1,0 +1,205 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'profile.css' %}" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- streamX Logo -->
+      <div class="logo-container">
+          <img src="{% static 'assets/logonamed.png' %}" alt="streamX Logo">
+      </div>
+
+      <!-- sidebar section -->
+      <div class="sidebar-section">
+          <a href="/" class="sidebar-link">
+            <span class="sidebar-link-icon">🏠</span>
+            Home
+          </a>
+          <a href="/search" class="sidebar-link">
+            <span class="sidebar-link-icon">🔍</span>
+            Search
+          </a>
+          <a href="/library/" class="sidebar-link">
+            <span class="sidebar-link-icon">🎵</span>
+            Your Library
+          </a>
+          <select class="sidebar-link2">
+            <option value="songs">All</option>
+            <option value="songs">Songs</option>
+            <option value="songs">Album</option>
+            <option value="playlist">Playlist</option>
+            <option value="podcast">Podcast</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="flex-1">
+
+      <!-- Favourite Tracks Section -->
+      <div class="p-5">
+        <h2 class="text-2xl font-bold mb-4">Songs</h2>
+        <div class="divide-y divide-gray-800">
+
+          <!-- Single Row -->
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/nm.jpg' %}" alt="Nahin Milta" class="w-12 h-12">
+              <div>
+                <a href="/music/0cUdmruT6kjxa5KpteSdwc/" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Nahin Milta</p>
+                  <p class="text-xs text-gray-400">Bayaan</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">2019</div>
+            <div class="justify-self-end text-gray-400">4:45</div>
+          </div>
+
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/falling.jpg' %}" alt="Falling" class="w-12 h-12">
+              <div>
+                <a href="/music/1ZMiCix7XSAbfAJlEZWMCp/" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Falling</p>
+                  <p class="text-xs text-gray-400">Harry Styles</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">2019</div>
+            <div class="justify-self-end text-gray-400">4:02</div>
+          </div>
+
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/rr.jpg' %}" alt="Rangeela Re" class="w-12 h-12">
+              <div>
+                <a href="/music/4x7fVJSYQvwaaJUqVnFGPa/" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Rangeela Re</p>
+                  <p class="text-xs text-gray-400">Lata Mangeshkar</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">1970</div>
+            <div class="justify-self-end text-gray-400">6:63</div>
+          </div>
+          <a href="/likedsongs/" style="color:rgb(110, 193, 241);">See more liked songs...</a>
+        </div>
+      </div>
+
+
+      <!-- Favourite Albums Section -->
+      <div class="p-5">
+        <h2 class="text-2xl font-bold mb-4">Albums</h2>
+        <div class="divide-y divide-gray-800">
+
+          <!-- Single Row -->
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/hahk.jpg' %}" alt="Hum Aapke Hain Koun" class="w-12 h-12">
+              <div>
+                <a href="#" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Hum Aapke Hain Koun</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">1994</div>
+            <div class="justify-self-end text-gray-400">15 songs</div>
+          </div>
+
+          <div class="grid grid-cols-3 items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/rockstar.jpg' %}" alt="Rockstar" class="w-12 h-12">
+              <div>
+                <a href="#" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Rockstar</p>
+                </a>
+              </div>
+            </div>
+            <div class="justify-self-end text-gray-400">2011</div>
+            <div class="justify-self-end text-gray-400">14 songs</div>
+          </div>
+          <a href="#" style="color:rgb(110, 193, 241);">See more albums...</a>
+        </div>
+      </div>
+
+
+      <!-- Favourite Playlists Section -->
+      <div class="p-5">
+        <h2 class="text-2xl font-bold mb-4">Playlists</h2>
+        <div class="divide-y divide-gray-800">
+
+          <!-- Single Track Row -->
+          <div class="flex justify-between items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/dancemix.png' %}" alt="Dance Mix" class="w-12 h-12">
+              <div>
+                <a href="#" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Dance Mix</p>
+                </a>
+              </div>
+            </div>
+            <div class="text-gray-400">60 items</div>
+          </div>
+
+          <div class="flex justify-between items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/focusragas.png' %}" alt="Focus Ragas" class="w-12 h-12">
+              <div>
+                <a href="#" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Focus Ragas</p>
+                </a>
+              </div>
+            </div>
+            <div class="text-gray-400">37 items</div>
+          </div>
+          <a href="#" style="color:rgb(110, 193, 241);">See more playlists...</a>
+        </div>
+      </div>
+
+
+      <!-- Favourite Podcasts Section -->
+      <div class="p-5">
+        <h2 class="text-2xl font-bold mb-4">Podcasts</h2>
+        <div class="divide-y divide-gray-800">
+    
+          <!-- Single Row -->
+          <div class="flex justify-between items-center py-3">
+            <div class="flex items-center space-x-4">
+              <img src="{% static 'assets/gita.png' %}" alt="Gita for the Young and Restless" class="w-12 h-12">
+              <div>
+                <a href="#" style="text-decoration: none; color: white;">
+                  <p class="text-base font-medium">Gita for the Young and Restless</p>
+                </a>
+              </div>
+              </div>
+                <div class="text-gray-400">11 episodes</div>
+              </div>
+    
+              <div class="flex justify-between items-center py-3">
+                <div class="flex items-center space-x-4">
+                  <img src="{% static 'assets/dlc.png' %}" alt="Death, Lies and Cyanide" class="w-12 h-12">
+                  <div>
+                    <a href="#" style="text-decoration: none; color: white;">
+                      <p class="text-base font-medium">Death, Lies and Cyanide</p>
+                    </a>
+                  </div>
+                </div>
+                <div class="text-gray-400">10 episodes</div>
+              </div>
+              <a href="#" style="color:rgb(110, 193, 241);">See more podcasts...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

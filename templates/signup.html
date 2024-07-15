@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <link rel="stylesheet" type="text/css" href="{% static 'signup.css' %}">
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="{% static 'assets/logo.png' %}" alt="streamX Logo">
+      <h1>streamX</h1>
+    </div>
+
+    <div>
+      <style>
+        h5 {
+          color: red;
+          font-size: 15px;
+          text-align: center;
+        }
+      </style>
+      {% for message in messages %}
+      <h5>{{message}}</h5>
+      {% endfor %}
+    </div>
+
+
+    <form action="" method="POST" class="bg-black">
+      {% csrf_token %}
+      
+      <div class="input-group">
+        <input type="text" name="username" placeholder="Username">
+      </div>
+      <div class="input-group">
+        <input type="email" name="email" placeholder="Email">
+      </div>
+      <div class="input-group">
+        <input type="password" name="password" placeholder="Password">
+      </div>
+      <div class="input-group">
+        <input type="password" name="password2" placeholder="Repeat Password">
+      </div>
+      <button type="submit">Register</button>
+      <p class="signin-text">Already have an account? <a href="/login">Sign in</a></p>
+    </form>
+    <p class="footer-text">streamX &copy; 1.0.1</p>
+  </div>
+</body>
+</html>
