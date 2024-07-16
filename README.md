@@ -8,11 +8,11 @@
 streamX is a music streaming web application where users can create account and listen to songs
 
 ## Features
-- Create account and login
-- Search for artists
-- Search for tracks
-- Visit artist profile
-- Visit library to view liked songs, albums, playlists or podcasts 
+- [x] Create account and login
+- [x] Search for artists
+- [x] Search for tracks
+- [x] Visit artist profile
+- [x] Visit library to view liked songs, albums, playlists or podcasts 
 
 ## Tech Stack
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
@@ -30,6 +30,7 @@ streamX is a music streaming web application where users can create account and 
 
 ## Contributors
 - [Saumili Dutta](https://github.com/aumiidutta)
+- [Bistirno Shil](https://github.com/)
 
 ## Demo
-Will be updated soon
+https://github.com/user-attachments/assets/2854cf35-7671-4cdb-9eb7-de4e2cc497cd
