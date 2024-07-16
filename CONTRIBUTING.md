@@ -64,9 +64,11 @@ python manage.py runserver
 - Contribute and then add a pull request
 
 ### NOTE
-Default Django server:
-- Ip address: 127.0.0.1 [IPv4]
-- Port: 8000
-<br><br>
-PR's will be merged once in a while since I'm actively working in other projects.<br>
-You can send me a message on LinkedIn for the same.
+- Default Django server:
+  - Ip address: 127.0.0.1 [IPv4]
+  - Port: 8000
+- If you're testing with basic plan, remember to check the analytics from personal billing
+- If the number of calls exceed 100, you'll get an error
+- To solve that error, delete the account from user settings, create a new account using same email id and subscribe to test.
+- PR's will be merged once in a while since I'm actively working in other projects.
+- You can send me a message on LinkedIn for the same.
