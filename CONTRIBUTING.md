@@ -15,6 +15,12 @@ git clone <forked_repo_link>
 - [Visual Studio Code](https://code.visualstudio.com/)
 
 ### SETUP & EXECUTION
+#### API
+- Create an account in RapidAPI
+- [Visit this link](https://rapidapi.com/DataFanatic/api/spotify-scraper)
+- Subscribe to test to test endpoints
+- Api code snippets are in Python request
+
 #### XAMPP
 - Start Apache and then MySQL
 - Click on Admin beside MySQL
@@ -35,6 +41,13 @@ pip install bs4
 - Migrate the database
 ```
 python manage.py migrate
+```
+- Change the api keys in the functions in views.py file under music folder
+```py
+headers = {
+	"x-rapidapi-key": "{your_api_key}",
+	"x-rapidapi-host": "spotify-scraper.p.rapidapi.com"
+}
 ```
 - Run the server
 ```
