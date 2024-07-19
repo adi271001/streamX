@@ -21,12 +21,12 @@ git clone <forked_repo_link>
 - Subscribe to test to test endpoints
 - Api code snippets are in Python request
 - The following endpoints were used:
-- - GET List top Artists [paid]
-- - GET List top Tracks [paid]
-- - GET Track Metadata
-- - GET download track on YouTube
-- - GET artist overview
-- - GET search
+  - GET List top Artists [paid]
+  - GET List top Tracks [paid]
+  - GET Track Metadata
+  - GET download track on YouTube
+  - GET artist overview
+  - GET search
 
 
 #### XAMPP
